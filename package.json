@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
-    "fbjs": "^0.8.4",
     "fs-extra": "^4.0.1",
     "node-replace": "^0.3.1",
     "node-webos": "0.0.5"
@@ -42,9 +41,10 @@
     "flow-bin": "^0.57.3",
     "jest": "20.1.0-delta.1",
     "prettier": "^1.5.3",
-    "react": "^16.0.0",
+    "fbjs": "^0.8.4",
+    "react": "^16.2.0",
     "react-fiber-types": "file:src/renderer/types",
-    "react-reconciler": "^0.6.0",
+    "react-reconciler": "^0.7.0",
     "rimraf": "^2.6.2",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^2.7.1",

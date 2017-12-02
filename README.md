@@ -175,9 +175,9 @@ Run the emulator and devices (should pack, build and run it on the emulator):
 $ react-tv run-webos
 ```
 
-## Using Module
+## Using as React Renderer
 
-### Platform
+### `Platform`
 
 When building a cross-platform TV app, you'll want to re-use as much code as possible. You'll probably have different scenarios where different code might be necessary.  
 For instance, you may want to implement separated visual components for `LG-WebOS` and `Samsung-Tizen`.
@@ -192,12 +192,16 @@ console.log(Platform('tizen')) // false
 console.log(Platform('orsay')) // false
 ```
 
-- Keys (in-draft)
+### `renderComponentOnAppLoaded`
+
+`renderComponentOnAppLoaded` is a HOC which receive a Component and renders only after application is launched, should work in any device.
+
+Takes a component and returns a higher-order component version of that component.
 
 ```js
-import { Keys } from 'react-tv'
+import { renderComponentOnAppLoaded } from 'react-tv'
 
-<Keys onChange={myCustomHandler}/>
+const App = renderComponentOnAppLoaded(<MyComponent/>)
 ```
 
 ## Examples
