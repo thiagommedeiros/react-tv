@@ -194,9 +194,7 @@ console.log(Platform('orsay')) // false
 
 ### `renderComponentOnAppLoaded`
 
-`renderComponentOnAppLoaded` is a HOC which receive a Component and renders only after application is launched, should work in any device.
-
-Takes a component and returns a higher-order component version of that component.
+Takes a component and returns a higher-order component version of that component, which renders only after application was launched, allows to not write diffent logics for many devices.
 
 ```js
 import { renderComponentOnAppLoaded } from 'react-tv'
@@ -280,10 +278,10 @@ Initial proof-of-concept. [IN PROGRESS]
 
 - [x] CLI Build Abstraction of LG Webos (`run-webos`, `run-webos-dev`)
 - [x] Create a guide or script to Install all LG WebOS environment
-- [ ] Renderer ReactElements to simple DOM
+- [x] Renderer ReactElements to simple DOM
   - [x] Support HOF and HOC
   - [x] Support State and Lifecycle
-  - [ ] Keyboard Navigation
+  - [x] Keyboard Navigation
 - [ ] Optmizate DOMRenderer for TV
 - [x] Check `webos` Platform
 - [x] Migrate to `React-Reconciler`
