@@ -7,7 +7,8 @@
     "files": [
       "index.html",
       "bundle.js",
-      "style.css"
+      "style.css",
+      "images"
     ]
   },
   "scripts": {
