@@ -169,7 +169,19 @@ $ react-tv init <my-app-name>
 
 #### 4: Running It!
 
-Run the emulator and devices (should pack, build and run it on the emulator):
+##### On TVs
+
+Run on device
+
+```
+$ react-tv run-webos <device>
+```
+
+##### On Emulator
+
+Run the emulator (should pack, build and run it on the emulator):
+
+When you not specify the device, it runs on VirtualBox WebOS Simulator.
 
 ```
 $ react-tv run-webos

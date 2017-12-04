@@ -104,9 +104,9 @@ function runWebOS(root, device) {
       }
 
       console.log(runningVMS);
+    } else {
+      console.log(chalk.dim('Running on', device));
     }
-
-    console.log(chalk.dim('Running on', device));
 
     clearInterval(task);
 
